@@ -21,7 +21,9 @@ class MinusViewController: UIViewController {
     @IBAction func runMinusButton(_ sender: Any) {
         let value1 = Int(number1TextField.text ?? "") ?? 0
         let value2 = Int(number2TextField.text ?? "") ?? 0
+
         resultLabel.text = String(value1 - value2)
+
         number1TextField.resignFirstResponder()
         number2TextField.resignFirstResponder()
     }
